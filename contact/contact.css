@@ -1,0 +1,92 @@
+@charset "utf-8"; 
+/* CSS Document */
+
+body{
+background-color: #000000;
+}
+nav{
+line-height: 500%;
+background-color: #f2f2f2;
+text-align: right;
+}
+a{
+text-decoration: none;
+font-family: 'Times New Roman', Times, serif;
+}
+img{
+position: relative;
+}
+.menu{
+background-color: #0d0d0d;
+color: white;
+font-size: 25px;
+margin: 4px 10px 4px 4px;
+padding: 10px 20px 10px 20px;
+border-top: 1px solid #CCCCCC;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+border-left: 1px solid #CCCCCC;
+transition: 0.4s
+}
+.menu:hover{
+background-color: #404040;
+color: white;
+}
+.navleft{
+float: left;
+}
+.heading{
+position: relative;
+left: 30px;
+color: white;
+font-family: Adobe Garamond Pro;
+font-size: 40px;
+}
+.square{
+width: 60%;
+height: 390px;
+background-color: #d9d9d9;
+border-radius: 10px;
+}
+.photo{
+height: 90%;
+width: 33%;
+top: 22px;
+left: 2%;
+border-top: 1px solid #CCCCCC;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+border-left: 1px solid #CCCCCC;
+}
+.center{
+position: relative;
+left: 300px;
+bottom: 340px;
+}
+.line{
+height: 38px;
+left: 300px;
+bottom: 544px;
+}
+.ig{
+height: 38px;
+left: 300px;
+bottom: 534px;
+}
+.facebook{
+height: 38px;
+left: 300px;
+bottom: 524px;
+}
+.twitter{
+height: 38px;
+left: 300px;
+bottom: 514px;
+}
+.map{
+position: relative;
+left: 800px;
+bottom: 844px;
+width:400px;
+height:380px;
+}

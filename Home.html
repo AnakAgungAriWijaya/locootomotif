@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home/home.css" type="text/css">
+    <title>LO</title>
+</head>
+<body>
+        <div class="bb">
+            <a href="car.html" class="cars">Car</a>
+            <a href="all.html" class="all">All</a>
+            <a href="motorcycle.html" class="motorcycle">Motorcycle</a>
+        </div>
+        <img class="mySlides" src="home/2042020_200420_0003.jpg">
+        <img class="mySlides" src="home/2042020_200420_0008.jpg">
+        <img class="mySlides" src="home/2042020_200420_0014.jpg">
+        <img class="mySlides" src="home/2042020_200420_0021.jpg">
+        <img class="mySlides" src="home/2042020_200420_0026.jpg">
+        <img class="mySlides" src="home/2042020_200420_0031.jpg">
+        <img class="mySlides" src="home/2042020_200420_0041.jpg">
+        <img class="mySlides" src="home/2020-04-21.10.17.53.jpg">
+        <h1><b>LOCO OTOMOTIF</b></h1>
+        
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000);
+          }
+    </script> 
+        
+</body>
+</html>

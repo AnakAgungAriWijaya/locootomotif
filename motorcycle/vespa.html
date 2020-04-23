@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vespa/vespa.css" type="text/css">
+    <title>LO</title>
+</head>
+<body>
+    
+    <nav>
+        <img src="logo/logo.jpg" height="50px" id="image"  class="navleft">
+        <a href="../home.html" class="menu">Home</a>
+        <a href="../car.html" class="menu">Car</a>
+        <a href="../all.html" class="menu">All</a>
+        <a href="../motorcycle.html" class="menu">Motorcycle</a>
+    </nav>
+    <div class="square"> 
+      <h1 class="light">IDR 50,000,000</h1>
+      <h1 class="shadow">Vespa Scooter</h1>
+      <p class="information">Brand : Vespa
+      <br>Year : 1965
+      <br>Colour : Light Blue
+      <br>Sales type: Individual
+      </p>
+      <p class="location">Denpasar Barat, Denpasar Kota, Bali, Indonesia</p>
+      <p class="date">22 Apr</p>
+    </div>
+    <div class="photo">
+      <img class="slides" src="vespa/vespa3.jpg">
+      <img class="slides" src="vespa/vespa1.jpg">
+      <img class="slides" src="vespa/vespa2.jpg">
+    
+      <button class="btnleft" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="btnright" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <div class="detail">
+      <h2 class="heding2">Detail</h2>
+      <ul class="alltable">
+        <li class="table1">
+          <span class="table"><b>Condition:</b></span>
+          <span >Second-hand</span>
+        </li>
+        <li class="table2">
+          <span class="table"><b>Type:</b></span>
+          <span>Motorcycle</span>
+        </li>
+        <li class="table1">
+          <span class="table"><b>Fuel:</b></span>
+          <span>Premium</span>
+        </li>
+        <li class="table2">
+          <span class="table"><b>Engine size:</b></span>
+          <span>150 CC</span>
+        </li>
+        <li class="table1">
+          <span class="table"><b>Transmission:</b></span>
+          <span>Manual</span>
+        <li class="table2"> 
+          <Span class="table"><b>Model:</b></Span>
+          <span>VBB</span>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+      ​
+</body>
+</html>
