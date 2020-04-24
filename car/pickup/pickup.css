@@ -13,6 +13,28 @@
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     }
+    input[type=text], select {
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    }
+    input[type=submit] {
+    width: 100%;
+    font-size: medium;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    input[type=submit]:hover {
+    background-color: #cccccc;
+    } 
     .menu{
     background-color: #0d0d0d;
     color: white;
@@ -31,6 +53,7 @@
     }
     .navleft{
     float: left;
+    height: 40%;
     }
     .slides{
     width: 50%;
@@ -60,17 +83,16 @@
     background-color: black;
     position: absolute;
     top: -280px;
-    left: 620px;
+    left: 49%;
     padding: 10px;
     }
     .square{
-    width: 480px;
+    width: 41%;
     height: 235px;
     background-color: #d9d9d9;
     border-radius: 10px;
     position: relative;
-    left: 700px;
-    top: -5px;
+    left: 54%;
     font-family: Adobe Garamond Pro;
     }
     .light{
@@ -106,7 +128,7 @@
     left: 420px;
     }
     .detail{
-    width: 636px;
+    width: 706px;
     height: 235px;
     background-color: #d9d9d9;
     border-radius: 10px;
@@ -143,4 +165,38 @@
     flex-basis: 70%;
     line-height: 20px;
     padding: 12px 8px;
-    }   
+    }
+    .form{
+    float: left;
+    }
+    #panel, #flip {
+    position: relative;
+    left: 764px;
+    width: 537px;
+    bottom: 250px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border: solid 1px #d9d9d9;
+    border-radius: 3px;
+    font-family: Adobe Garamond Pro;
+    }
+    #panel{
+    height: 320px;
+    padding: 20px;
+    display: none;
+    }
+    #format{
+    background-color: #999999;
+    border-radius: 6px;
+    }
+    #comment{
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    }

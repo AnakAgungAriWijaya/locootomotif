@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vellfire/vellfire.css" type="text/css">
+    <script src="../../../javascript/jquary-3.5.0.js"></script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideDown(5000);
+        });
+      });
+      </script>
     <title>LO</title>
 </head>
 <body>
     
     <nav>
-        <img src="logo/logo.jpg" height="50px" id="image"  class="navleft">
-        <a href="../home.html" class="menu">Home</a>
+        <img src="logo/logo.jpg" alt="logo.jpg" class="navleft">
+        <a href="../index.html" class="menu">Home</a>
         <a href="../car.html" class="menu">Car</a>
         <a href="../all.html" class="menu">All</a>
         <a href="../motorcycle.html" class="menu">Motorcycle</a>
+        <a href="../contact.html" class="menu">Contact</a>
     </nav>
     <div class="square"> 
       <h1 class="light">IDR 500,000,000</h1>
@@ -27,11 +36,11 @@
       <p class="date">22 Apr</p>
     </div>
     <div class="photo">
-      <img class="slides" src="vellfire/2042020_200420_0021.jpg">
-      <img class="slides" src="vellfire/2042020_200420_0020.jpg">
-      <img class="slides" src="vellfire/2042020_200420_0018.jpg">
-      <img class="slides" src="vellfire/2042020_200420_0017.jpg">
-      <img class="slides" src="vellfire/2042020_200420_0016.jpg">
+      <img class="slides" src="vellfire/2042020_200420_0021.jpg" alt="2042020_200420_0021.jpg">
+      <img class="slides" src="vellfire/2042020_200420_0020.jpg" alt="2042020_200420_0020.jpg">
+      <img class="slides" src="vellfire/2042020_200420_0018.jpg" alt="2042020_200420_0018.jpg">
+      <img class="slides" src="vellfire/2042020_200420_0017.jpg" alt="2042020_200420_0017.jpg">
+      <img class="slides" src="vellfire/2042020_200420_0016.jpg" alt="2042020_200420_0016.jpg">
     
       <button class="btnleft" onclick="plusDivs(-1)">&#10094;</button>
       <button class="btnright" onclick="plusDivs(1)">&#10095;</button>
@@ -62,11 +71,28 @@
           <Span class="table"><b>Model:</b></Span>
           <span>Vellfire</span>
         </li>
-        </li>
       </ul>
     </div>
 
+    <div id="flip">Click To Contact Us </div>
+    <div id="panel">
+      <form action="contact" id="format">
+            <label for="name" class="form">Name</label>
+            <br><input type="text" name="name" id="name">
+            <br>
+            <label for="email" class="form">Email</label>
+            <br><input type="text" name="email" id="email">
+            <br>
+            <label for="phonenumber" class="form">Phone Number</label>
+            <br><input type="text" name="phonenumber" id="phonenumber">
+            <br>
+            <label for="comment" class="form">Comment</label> 
+            <br><textarea name="comment" id="comment"></textarea>
+            <br>
+            <input type="Submit">
+      </form>
     </div>
+
     <script>
     var slideIndex = 1;
     showDivs(slideIndex);

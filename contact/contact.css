@@ -34,6 +34,7 @@ color: white;
 }
 .navleft{
 float: left;
+height: 40%;
 }
 .heading{
 position: relative;
@@ -60,33 +61,26 @@ border-left: 1px solid #CCCCCC;
 }
 .center{
 position: relative;
-left: 300px;
+left: 330px;
 bottom: 340px;
 }
 .line{
 height: 38px;
-left: 300px;
-bottom: 544px;
+left: 330px;
+bottom: 545px;
 }
 .ig{
 height: 38px;
-left: 300px;
+left: 330px;
 bottom: 534px;
 }
 .facebook{
 height: 38px;
-left: 300px;
-bottom: 524px;
+left: 330px;
+bottom: 522px;
 }
 .twitter{
 height: 38px;
-left: 300px;
-bottom: 514px;
-}
-.map{
-position: relative;
-left: 800px;
-bottom: 844px;
-width:400px;
-height:380px;
+left: 330px;
+bottom: 508px;
 }

@@ -43,6 +43,7 @@ color: white;
 }
 .navleft{
 float: left;
+height: 40%;
 }
 .heading{
 position: relative;
