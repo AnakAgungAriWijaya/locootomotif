@@ -128,7 +128,7 @@ input[type=submit]:hover {
     left: 520px;
 }
 .detail{
-    width: 706px;
+    width: 50%;
     height: 235px;
     background-color: #d9d9d9;
     border-radius: 10px;
@@ -171,8 +171,8 @@ input[type=submit]:hover {
 }
 #panel, #flip {
     position: relative;
-    left: 764px;
-    width: 537px;
+    left: 54%;
+    width: 38%;
     bottom: 250px;
     padding: 20px;
     font-size: 18px;
